@@ -1,0 +1,29 @@
+:root {
+  --box-width: 112px;
+}
+
+.body {
+  position: relative;
+}
+
+.wrapper {
+  min-width: var(--box-width);
+  position: absolute;
+  left: 0;
+  transition: left 1s ease-in-out;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.btn-list {
+  margin-top: 10px;
+  display: flex;
+}
+
+.aligned {
+  left: calc(100% - var(--box-width));
+}
